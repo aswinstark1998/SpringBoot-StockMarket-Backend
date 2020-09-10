@@ -29,6 +29,8 @@ import com.wellsfargo.uploadexcel.util.UploadExcelUtil;
 public class ExcelHelper {
 	public static String TYPE = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
 	static String[] HEADERs = { "company_id", "exchange_id", "price", "date", "time" };
+	
+	//This name must be same as the Sheet name
 	static String SHEET = "Sheet";
 
 	public static boolean hasExcelFormat(MultipartFile file) {
